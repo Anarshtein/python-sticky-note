@@ -36,9 +36,9 @@ Python is required to run this application. If you don't have Python installed, 
 ### Plyer
 - To enable desktop notifications, you need to install the `plyer` library. Use the following command to install it via pip:
 
-```bash
-pip install plyer
-```
+  ```bash
+  pip install plyer
+  ```
  
 
 ## Installation
