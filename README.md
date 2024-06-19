@@ -44,14 +44,17 @@ Python is required to run this application. If you don't have Python installed, 
 ## Installation
 
 1. **Clone the repository**:
+
    ```bash
    git clone https://github.com/Anarshtein/python-sticky-note.git
 
 2. **Navigate to the project directory**:
+   
    ```bash
    cd python-sticky-note
    ```
 3. **Run the application**:
+   
    ```bash
    python main.py
    ```
