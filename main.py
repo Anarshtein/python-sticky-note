@@ -1,7 +1,7 @@
 import tkinter as tk  # Import the tkinter module and alias it as tk
 from tkinter import Label, simpledialog, messagebox  # Import specific widgets and dialog boxes from tkinter
 import os  # Import the os module for file operations
-
+from plyer import notification # Importing the notification class from the plyer module
 class StickyNotesApp:
     def __init__(self, root):
         self.root = root  # Store the root window reference
@@ -59,12 +59,26 @@ class StickyNotesApp:
         if note_text:  # If the user enters a note
             self.notes.append(note_text)  # Add the note to the list
             self.save_notes()  # Save the updated notes list to the file
+            
+            # Creating a notification with success mesaage and added note as its content 
+            notification.notify(
+                title = "Note inserted successfully!",
+                message= note_text,
+                timeout=2
+            )
             self.show_notes()  # Refresh the displayed notes
 
     def delete_note(self, note):
         if messagebox.askyesno("Delete", "Are you sure you want to delete this note?"):  # Confirm deletion
             self.notes.remove(note)  # Remove the note from the list
             self.save_notes()  # Save the updated notes list to the file
+            
+            # Creating a notification with success mesaage and added note as its content 
+            notification.notify(
+                title = "Note deleted successfully!",
+                message= note,
+                timeout=2
+            )
             self.show_notes()  # Refresh the displayed notes
 
     def show_notes(self):
