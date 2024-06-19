@@ -30,7 +30,16 @@ Python is required to run this application. If you don't have Python installed, 
      ```
    - You should see the installed Python version.
      
-### Tkinter (comes pre-installed with Python)
+### Tkinter
+  - Tkinter comes pre-installed with Python and does not require extra installation.
+
+### Plyer
+- To enable desktop notifications, you need to install the `plyer` library. Use the following command to install it via pip:
+
+```bash
+pip install plyer
+```
+ 
 
 ## Installation
 
@@ -41,9 +50,11 @@ Python is required to run this application. If you don't have Python installed, 
 2. **Navigate to the project directory**:
    ```bash
    cd python-sticky-note
+   ```
 3. **Run the application**:
    ```bash
    python main.py
+   ```
 
 ## Usage
 
@@ -59,4 +70,6 @@ Python is required to run this application. If you don't have Python installed, 
 ```bash
 python-sticky-note/
 ├── main.py
-└── notes.txt
+├── notes.txt
+└── README.md
+```
